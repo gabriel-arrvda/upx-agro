@@ -1,0 +1,28 @@
+{
+    "FarmName":"Fazenda Feliz =D",
+    "Currency":1000,
+    "CurrencyPaid":0,
+    "PlacedObjects":
+    [
+        {
+            "BuildingId":0,
+            "origin_x":4,
+            "origin_y":6,
+            "direction":0,
+            "worldPos_x":40.0,
+            "worldPos_y":0.0,
+            "worldPos_z":60.0,
+            "BuildingData":""
+        },
+        {
+            "BuildingId":2,
+            "origin_x":8,
+            "origin_y":2,
+            "direction":0,
+            "worldPos_x":80.0,
+            "worldPos_y":0.0,
+            "worldPos_z":20.0,
+            "BuildingData":"{\"TerrainState\":1,\"SeedId\":2,\"StartDate\":\"03/10/2022 21:37:14\"}"
+        }
+    ]
+}
