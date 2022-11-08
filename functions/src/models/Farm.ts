@@ -1,5 +1,6 @@
 export class Farm {
 	constructor(
+		public farmId: string,
 		public farmName: string,
 		public currency: number,
 		public currencyPaid: number,
@@ -9,13 +10,21 @@ export class Farm {
 
 export class PlacedObject {
 	constructor(
-		buildingId: number,
-		origin_x: number,
-		origin_y: number,
-		direction: number,
-		worldPos_x: number,
-		worldPos_y: number,
-		worldPos_z: number,
-		buildingData: string,
-	) {}
+		public buildingId: number,
+		public origin_x: number,
+		public origin_y: number,
+		public direction: number,
+		public worldPos_x: number,
+		public worldPos_y: number,
+		public worldPos_z: number,
+		public buildingData: any,
+	) { }
+
+	fromJson(){
+		this.buildingData = JSON.parse(JSON.stringify(this.buildingData))
+	}
+
+	toJson(){
+		this.buildingData = JSON.stringify(this.buildingData)
+	}
 }

@@ -11,6 +11,8 @@ module.exports = {
     root: true,
     rules: {
         "no-empty-function": "off",
-        "@typescript-eslint/no-empty-function": "off"
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off"
     },
   };
