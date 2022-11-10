@@ -45,7 +45,7 @@ Project for college course of UPX (Usina de projetos experimentais), the project
 #### Response success
 ```
     msg: string,
-    data: 
+    data: {
         farmId: string,
         farmName: string,
         currency: number,
@@ -78,7 +78,7 @@ Project for college course of UPX (Usina de projetos experimentais), the project
 #### Response success
 ```
     msg: string,
-    data: 
+    data: {
         farmId: string,
         farmName: string,
         currency: number,
@@ -94,4 +94,31 @@ Project for college course of UPX (Usina de projetos experimentais), the project
             buildingData: json,
         }[],
     }
+```
+### fetchAll
+
+#### Full path
+```
+/fetchAll
+```
+
+#### Response success
+```
+    msg: string,
+    data: {
+        farmId: string,
+        farmName: string,
+        currency: number,
+        currencyPaid: number,
+        placedObjects: {
+            buildingId: number,
+            origin_x: number,
+            origin_y: number,
+            direction: number,
+            worldPos_x: number,
+            worldPos_y: number,
+            worldPos_z: number,
+            buildingData: json,
+        }[],
+    }[]
 ```

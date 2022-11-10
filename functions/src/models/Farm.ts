@@ -19,12 +19,4 @@ export class PlacedObject {
 		public worldPos_z: number,
 		public buildingData: any,
 	) { }
-
-	fromJson(){
-		this.buildingData = JSON.parse(JSON.stringify(this.buildingData))
-	}
-
-	toJson(){
-		this.buildingData = JSON.stringify(this.buildingData)
-	}
 }
